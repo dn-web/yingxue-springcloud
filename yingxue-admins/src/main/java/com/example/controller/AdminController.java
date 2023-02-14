@@ -12,7 +12,7 @@ public class AdminController {
 
     private final AdminService adminService;
 
-
+    pubilc void test(){}
 
 
 
