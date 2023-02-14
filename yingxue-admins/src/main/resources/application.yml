@@ -1,0 +1,18 @@
+server:
+  port: 8980
+spring:
+  application:
+    name: API-ADMINS
+  cloud:  #将本服务注册进nacos
+    nacos:
+      server-addr: localhost:8848 # nacos 地址
+
+  datasource: # 配置mysql数据源
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/yingxue?characterEncoding=UTF-8&useSSL=false
+    username: root
+    password: root
+
+mybatis: # 指定mybatis的mapper映射文件的路径【当映射文件和对应的mapper接口不在同一个包下时】
+  mapper-locations: classpath:mapper/*.xml

@@ -1,0 +1,8 @@
+server:
+  port: 8982
+spring:
+  application:
+    name: API-USERS
+  cloud: #将本服务注册进nacos
+    nacos:
+      server-addr: localhost:8848 # nacos 地址
